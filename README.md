@@ -1,63 +1,99 @@
-### Codeigniter Application Installer
+### PHP Application GUI Installer
 
- - Web UI to facilitate codeigniter app installation
-
+ - A PHP library To provide GUI installer for you PHP applications
+ - Easy to integrate
 
 ### Requirement
 
  - PHP Version >= 5.6
- - jic/\_data directory must be writable by PHP
+ - ji/\_data directory must be writable by PHP
 
 
-### Installation ( as it is )
+### How to Integrate Installer in Your PHP Application
 
- - CI 3.1.6 is included with it and is configured
+ - **Clone or download this repository**
+ - **Include it in your project**
+ ```php
+ require( '/path/to/ji/include_me.php');
 
- - Clone or download this repository
+ $env = 'test' // enivoronment name, just a unique key to keep configuration seperate
 
- - Codeigniter *application* folder is  jic/codeigniter/application
+ // passing third parameter true will auto run installation if not installed already
+ \JI::run( __DIR__, $env, TRUE ); // It must be created in public root usually in index.php
+ ```
+ - **Define Required Fields**
+ 	- By defualt one form named **main** is already created
+	- To add define required fields edit jic/form/\_fields.php (sample fields definitions are provided in it)
+	- To change form title and description edit file **_config.php**
+	- By default all fields are required, To set field optional user 'data_type' => dataType?required=0
+		example 'last_name' =>
+		[
+			'data_type' => 'string?required=0'
+		]
 
- - Codeigniter *system* folder is jic/codeigniter/system
+### Creating new form
+ - Create a folder "mynewform" inside jic/form/
+ - Create files **_config.php** adn **_fields.php** in it, similar to form "main" and configure it
+ - Add it to jic/form/\_map.php
 
+### Access Configuration Values
+ - In you configuration files to access values use
+ ```php
+ 	'key' => \JI::I()->config('mynewform.configKey'),
 
-### Installation ( advanced )
+	//main form configuartions can be accessed directly
+	 'url' => \JI::I()->config('main.url'),
 
-- Clone or download this repository
+	//or simply
+	 'url' => \JI::I()->config('url'),
+ ```
 
-- you only need "jic" folder, you can delete "public_html" and  "jic/codeigniter" directory
-
-- EDIT your codeigniter config/config.php and change respective lines to
-
+###Examples
+ - **_fields.php**
 ```php
+ <?php return
+ [
+	'admin_email' =>
+	[
+		'label' 	=> 'Admin Email',
+		'view_type' => 'editText',
+		'data_type'	=> 'string', //required field
+	],
 
-$config['base_url'] = \JI::I()->config('base_url');
+	'last_name' =>
+	[
+		'label' 	=> 'Last Name',
+		'view_type' => 'editText',
+		'data_type'	=> 'string?required=0', //optional field
+	],
 
-$config['encryption_key'] = \JI::I()->config('encryption_key');
+	//example of select fields
+	'database_driver' =>
+	[
+		'label' 	=> 'Database Driver',
+		'view_type' => 'selectOne',
+		'data_type' => 'string',
+		'options'	=>
+		[
+			'mysqli'	=> 'MYSQL(mysqli)',
+			'mysql'	=> 'MYSQL(mysql)',
+			'oci8' 	=> 'Oracle(oci8)',
+			'postgre' 	=> 'PostgreSQL(postgre)',
+			'cubrid'	=> 'CUBRID(cubrid)',
+		],
 
+		'selectedValue' => 'oci8',
+	],
+
+ ];
 ```
 
-- EDIT your codeigniter config/database.php and change respective lines to
+### Currently Suported HTML Fields
+- text  	= editText
+- textarea 	= editTextBig
+- select 	= selectOne
 
-```php
-'hostname' => \JI::I()->config('db.host'),
-'username' => \JI::I()->config('db.username') ,
-'password' => \JI::I()->config('db.password'),
-'database' => \JI::I()->config('db.name'),
-'dbprefix' => \JI::I()->config('db.prefix'),
-```
-
-- in your public root index.php, add follwing lines to the top
-
-```php
-require( '/path/jic/include_me.php');
-
-$env = 'prod' // enivoronment name, just a unique key to keep configuration seperate
-
-// passing third parameter true will auto run installation if not installed already
-\JI::run( __DIR__, $env, TRUE );
-```
-
-Now you can access your url
 
 ### NOTE
+ - Actual installer is only loaded during installation, so performance should not be an issue.
  - Before passing code to client OR if you want to reinstall, delete content of directory jic/\_data
