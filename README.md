@@ -22,10 +22,10 @@
  \JI::run( __DIR__, $env, TRUE ); // It must be created in public root usually in index.php
  ```
  - **Define Required Fields**
- 	- By defualt two forms named **main** and database is already created
-	- To create new configuration fields edit jic/form/\_fields.php (sample fields definitions are provided in it)
+ 	- By defualt two forms named **main** and **database** are already created
+	- To create new configuration fields edit jic/form/main/\_fields.php (sample fields definitions are provided in it)
 	- To change form title and description edit file **_config.php**
-	- By default all fields are required, To set field optional user 'data_type' => dataType?required=0
+	- By default all fields are required, To set field optional use 'data_type' => datatype?required=0
 		example
 		```php
 		'last_name' =>
@@ -46,10 +46,10 @@
  	'key' => \JI::I()->config('mynewform.configKey'),
 
 	//main form configuartions can be accessed directly
-	 'url' => \JI::I()->config('main.url'),
+	'url' => \JI::I()->config('main.url'),
 
 	//or simply
-	 'url' => \JI::I()->config('url'),
+	'url' => \JI::I()->config('url'),
  ```
 
 ### Examples
@@ -62,6 +62,7 @@
 		'label' 	=> 'Admin Email',
 		'view_type' => 'editText',
 		'data_type'	=> 'string', //required field
+		'deafult'	=> 'deafult value',
 	],
 
 	'last_name' =>
@@ -75,8 +76,8 @@
 	'database_driver' =>
 	[
 		'label' 	=> 'Database Driver',
-		'view_type' => 'selectOne',
-		'data_type' => 'string',
+		'view_type'	=> 'selectOne',
+		'data_type'	=> 'string',
 		'options'	=>
 		[
 			'mysqli'	=> 'MYSQL(mysqli)',

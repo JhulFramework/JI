@@ -1,1 +1,1 @@
-<div class="header" > Codeignitor App Installer </div>
+<div class="header" >Application Installation</div>
