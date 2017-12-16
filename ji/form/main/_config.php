@@ -2,5 +2,5 @@
 [
 	'required' => TRUE,
 	'title' => 'MyApplication installation',
-	'description' => 'please provide application url and secretkey',
+	'description' => 'Please provide application url and secretkey',
 ];

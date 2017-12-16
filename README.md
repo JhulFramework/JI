@@ -22,14 +22,17 @@
  \JI::run( __DIR__, $env, TRUE ); // It must be created in public root usually in index.php
  ```
  - **Define Required Fields**
- 	- By defualt one form named **main** is already created
-	- To add define required fields edit jic/form/\_fields.php (sample fields definitions are provided in it)
+ 	- By defualt two forms named **main** and database is already created
+	- To create new configuration fields edit jic/form/\_fields.php (sample fields definitions are provided in it)
 	- To change form title and description edit file **_config.php**
 	- By default all fields are required, To set field optional user 'data_type' => dataType?required=0
-		example 'last_name' =>
+		example
+		```php
+		'last_name' =>
 		[
 			'data_type' => 'string?required=0'
-		]
+		],
+		```
 
 ### Creating new form
  - Create a folder "mynewform" inside jic/form/
@@ -39,6 +42,7 @@
 ### Access Configuration Values
  - In you configuration files to access values use
  ```php
+
  	'key' => \JI::I()->config('mynewform.configKey'),
 
 	//main form configuartions can be accessed directly
@@ -48,7 +52,7 @@
 	 'url' => \JI::I()->config('url'),
  ```
 
-###Examples
+### Examples
  - **_fields.php**
 ```php
  <?php return
