@@ -1,0 +1,53 @@
+.grid
+{
+	display: flex;
+
+	flex-flow: row wrap;
+
+      justify-content: space-around;
+
+	padding: 12px;
+}
+
+.item
+{
+
+	margin: auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.tile
+{
+	display: block;
+
+	width: 210px;
+}
+
+.icon
+{
+	text-align: center;
+	display: block;
+	font-size: 120px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.bottom
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottom .label
+{
+	align-self: center;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.bottom a
+{
+	padding: 16px;
+	align-self: flex-end;
+}

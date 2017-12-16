@@ -1,0 +1,42 @@
+.roomlist
+{
+	display: block;
+	text-align: center;
+	padding: 24px 12px;
+}
+
+.roomlist .container
+{
+	text-align: left;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.room
+{
+	display: flex;
+
+	align-items: center;
+
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.room .name
+{
+	flex-grow: 1;
+	padding: 12px;
+	font-size: 18px;
+}
+
+.room a
+{
+	padding: 18px 6px;
+}
+
+.rules
+{
+	display: block;
+	text-align: left;
+	padding: 24px 12px;
+}

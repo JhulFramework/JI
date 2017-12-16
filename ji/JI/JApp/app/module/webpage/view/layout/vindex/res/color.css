@@ -1,0 +1,21 @@
+
+.icon
+{
+	color: #60666b;
+}
+
+.tile
+{
+	border: 1px dashed #555;
+}
+
+.bottom .label
+{
+	color: #ddd;
+}
+
+.tile a:hover
+{
+	background: #20262b;
+	color: #fff;
+}

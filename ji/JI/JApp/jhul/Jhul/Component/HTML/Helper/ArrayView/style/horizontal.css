@@ -1,0 +1,47 @@
+.horizontal
+{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.pair_h
+{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+	margin: 0 6px;
+}
+
+.key_h
+{
+	display: block;
+	text-align: center;
+	border-bottom: 1px dashed;
+
+	font-size: 12px;
+
+}
+
+.value_h
+{
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	padding: 12px;
+
+	height: 100%;
+	font-size: 12px;
+	
+
+
+}
+
+.arrow_h
+{
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	padding-left: 12px;
+	padding-right: 12px;
+}

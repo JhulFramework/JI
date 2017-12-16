@@ -1,0 +1,17 @@
+
+body, div, html
+{
+	padding: 0;
+	margin: 0;
+
+}
+
+html, body
+{
+	min-height:100%;
+}
+
+body, div, span
+{
+	word-wrap: break-word;
+}

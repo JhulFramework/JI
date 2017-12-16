@@ -1,0 +1,151 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+.vindex
+{
+	font-family: Kalam;
+	text-align: center;
+	display: block;
+}
+
+.vindex .items
+{
+clear: both;
+	display:block;
+	width: 100%;
+
+	text-align: left;
+	padding: 36px 0;
+
+	text-align: left;
+
+
+
+}
+
+
+.vindex .item
+{
+	width:100%;
+	display: block;
+	float: left;
+	text-align: center;
+	border-left: 1px soild green;
+
+}
+
+
+
+.vindex .item .tile .content
+{
+	display:block;
+
+}
+
+.vindex .item .tile
+{
+	padding: 36px 0;
+	display: inline-block;
+
+	width: 220px;
+	height: 220px;
+	vertical-align: bottom;
+
+	border: 1px dashed #555;
+
+	position: relative;
+
+
+}
+
+.vindex .item .bottom
+{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+}
+
+.vindex .item .icon
+{
+
+	font-size: 64px;
+	padding: 24px;
+	color: #666;
+	display: inline-block;
+
+}
+
+
+
+.vindex .item .label
+{
+	padding: 12px;
+	font-size: 24px;
+}
+.vindex .item a
+{
+	padding: 12px;
+	font-size: 24px;
+}
+
+.vindex .item a:hover
+{
+	color: #4ad;
+	background: #10161b;
+}
+
+
+@media only screen and (min-width: 480px)
+{
+	.vindex .item
+	{
+		width: 50%;
+		margin-top: 1.5%;
+		margin-bottom: 1.5%;
+	}
+}
+
+@media only screen and (min-width: 720px)
+{
+
+	.vindex .items
+	{
+		width: 99%;
+		margin: auto;
+	}
+
+	.vindex .item
+	{
+		width: 33%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+}
+
+
+@media only screen and (min-width: 960px)
+{
+
+	.vindex .items
+	{
+		width: 100%;
+		margin: auto;
+	}
+
+
+	.vindex .item
+	{
+		width: 25%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+}
+
+
+.vindex .items:before,
+.vindex .items:after { content:""; display:table; }
+.vindex .items:after { clear:both;}
+.vindex .items { zoom:1; /* For IE 6/7 */ }

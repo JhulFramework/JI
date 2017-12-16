@@ -1,0 +1,58 @@
+.formWrapper
+{
+	display: block;
+	background: ##20262b;
+	text-align: center;
+}
+
+form
+{
+	width: 100%;
+	text-align: left;
+	display: block;
+	margin: auto;
+	padding-bottom: 12px;
+
+}
+
+.editTextWrapper, .editTextBigWrapper
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.editTextWrapper input, .editTextBigWrapper textarea
+{
+
+	display: block;
+	padding: 12px 0;
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 98%;
+	background: #10161b;
+	margin: auto;
+	color:  #d0d6db;
+	border: none;
+
+	font-size: 15px;
+	font-family: Kalam;
+}
+
+.editTextBigWrapper textarea
+{
+
+}
+
+.formWrapper label
+{
+	display: block;
+	padding: 12px;
+	color: #80868b;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.buttonWrapper
+{
+	padding: 12px;
+}

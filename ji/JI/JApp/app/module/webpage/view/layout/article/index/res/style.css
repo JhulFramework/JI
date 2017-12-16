@@ -1,0 +1,124 @@
+
+#post_form textarea
+{
+	background: #30363b;
+}
+
+a.read_button
+{
+	color:#ddd;
+	font-weight: bold;
+	padding: 6px 12px;
+	font-size: 16px;
+}
+
+a.read_button:hover
+{
+	color:#fff;
+
+}
+
+
+.plus_active
+{
+	color: #2e6;
+	font-weight: bold;
+}
+
+.minus_active
+{
+	color: #e62;
+	font-weight: bold;
+}
+
+
+
+.preview
+{
+	padding: 6px 18px;
+	color: #a0a6ab;
+	font-family: Kalam;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	display: block;
+	height:150px;
+	overflow: hidden;
+}
+
+.title
+{
+	font-size: 20px;
+	color:#d0d6db;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+}
+
+.time, .author
+{
+	font-size: 12px;
+	padding-left: 6px;
+	padding-right: 6px;
+	color:#80868b;
+}
+
+a.author
+{
+	font-size: 14px;
+}
+.articlePreview
+{
+	padding: 12px;
+
+	margin:12px 0;
+	border-bottom: 1px dashed #20262b;
+	background: #202628;
+}
+
+.articlePreview button
+{
+	border: none;
+	background: transparent;
+	display: inline-block;
+	min-width: 48px;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: center;
+	
+
+	color: #60666b;
+}
+
+.articlePreview .row2
+{
+	padding: 12px 0;
+}
+
+.articlePreview button:hover
+{
+	color:#fff;
+	cursor: pointer;
+}
+
+.articlePreview .leftquote
+{
+	display: block;
+
+	text-align: left;
+	padding-top:24px;
+
+	font-size: 16px;
+}
+
+.articlePreview .rightquote
+{
+	display: block;
+
+	text-align: right;
+
+	padding-bottom:24px;
+	font-size: 16px;
+}

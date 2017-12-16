@@ -1,0 +1,21 @@
+
+
+.index .key
+{
+	padding: 12px 0;
+	width: 60px;
+	text-align: center;
+	background: #10161b;
+	font-size: 18px;
+}
+
+
+.index .editlink
+{
+	padding: 12px 24px;
+	font-size: 18px;
+}
+
+
+
+.index:nth-child(odd) {background: #20262f;}

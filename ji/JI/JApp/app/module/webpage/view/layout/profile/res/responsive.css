@@ -1,0 +1,20 @@
+
+
+@media screen and (max-width: 600px)
+{
+	.right-section
+	{
+		padding-top : 24px;
+		padding-bottom : 24px;
+	}
+}
+
+
+
+@media screen and (min-width: 601px)
+{
+	.profile .level-item
+	{
+		height: 100vh;
+	}
+}

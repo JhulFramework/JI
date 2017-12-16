@@ -1,0 +1,19 @@
+.titlebar a
+{
+
+	padding: 6px 6px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #00D1B2;
+}
+
+
+
+.titlebar .title
+{
+	padding: 8px 6px;
+	font-size: 18px;
+	color: #888;
+	font-weight: bold;
+	letter-spacing: 1px;
+}

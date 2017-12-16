@@ -1,0 +1,43 @@
+
+
+.page_navigation
+{
+	display: flex;
+	flex-basis: grow;
+	align-items:stretch;
+	background: #12161b;
+}
+
+.page_navigation .previous, .page_navigation .next
+{
+	padding:12px ;
+	font-size: 24px;
+	background: #10161b;
+}
+
+
+
+.page_navigation .center
+{
+	font-size: 18px;
+	margin:auto;
+	color: #888;
+
+	letter-spacing: 1px;
+}
+
+.page_navigation .previous
+{
+	float: left;
+}
+
+
+.page_navigation .next
+{
+	float: right;
+}
+
+.page_navigation a
+{
+	color: #e0e6eb;
+}

@@ -1,0 +1,35 @@
+
+
+.field
+{
+	border: 1px dashed #222;
+
+	color: #777;
+}
+
+
+
+.index .key
+{
+	padding: 12px 0;
+	width: 300px;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.index .editlink
+{
+	padding: 12px 24px;
+	font-size: 18px;
+}
+
+
+
+.field:nth-child(even) {background: #20262f;}
+
+.value
+{
+	padding: 12px;
+	text-align: center;
+}

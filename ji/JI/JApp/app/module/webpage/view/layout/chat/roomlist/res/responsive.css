@@ -1,0 +1,12 @@
+.res320
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.res320 .left-section,
+.res320 .right-section
+{
+	min-width: 320px;
+	flex-grow: 1;
+}

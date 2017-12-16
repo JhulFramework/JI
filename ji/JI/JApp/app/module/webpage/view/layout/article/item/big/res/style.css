@@ -1,0 +1,136 @@
+
+.plus_active
+{
+	color: #2e6;
+	font-weight: bold;
+}
+
+.minus_active
+{
+	color: #e62;
+	font-weight: bold;
+}
+
+
+
+.article .time , .article .editButtonWrapper
+{
+	padding: 16px 12px;
+}
+
+
+.article-content
+{
+	border-top: 1px dashed #444;
+	border-bottom: 1px dashed #444;
+	color: #e0e6eb;
+	font-family: Kalam;
+	font-size: 16px;
+	display: block;
+	text-align: left;
+	display: block;
+
+	padding: 24px;
+}
+
+.title
+{
+	font-size: 20px;
+	color:#d0d6db;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+}
+
+.time, .author
+{
+	font-size: 12px;
+	padding-left: 6px;
+	padding-right: 6px;
+	color:#80868b;
+}
+
+a.author
+{
+	font-size: 14px;
+}
+.article
+{
+	
+}
+
+
+
+
+.article button:focus { outline:0 !important; }
+
+.article button:focus { outline:none !important;
+
+ }
+
+button::-moz-focus-inner { border: 0; }
+
+.article button
+{
+	border: none;
+	background: transparent;
+	display: inline-block;
+	min-width: 48px;
+	font-size: 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: center;
+
+	cursor: pointer;
+	color: #60666b;
+	outline:none;
+	border: 1px dashed #20262b;
+}
+
+.article button:hover
+{
+	border: 1px dashed #40464b;
+}
+
+.leftquote, .rightquote
+{
+	color: #d0d6db;
+	display: block;
+	padding:12px;
+	font-size: 24px;
+}
+
+.article .leftquote
+{
+	text-align: left;
+}
+
+.article .rightquote
+{
+	text-align: right;
+}
+
+.article .level
+{
+	font-size: 14px;
+}
+
+
+pre
+{
+	background: inherit;
+	color: inherit;
+	font: inherit;
+}
+
+a.edit
+{
+	color: #80868b;
+}
+
+
+a.edit:hover
+{
+	color: #4ae;
+}

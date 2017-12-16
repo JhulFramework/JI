@@ -1,0 +1,53 @@
+body
+{
+	background: #20262b;
+	color: #aaa;
+}
+
+.vertical
+{
+	display: flex;
+	flex-direction: column;
+
+
+
+}
+
+.pair_v
+{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid;
+	margin: 6px 0;
+}
+
+.key_v
+{
+
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+
+	min-width: 60px;
+	border-right: 1px dashed;
+	text-align: center;
+	font-size: 12px;
+
+}
+
+.value_v
+{
+	padding: 12px;
+
+	flex-grow: 1;
+	font-size: 12px;
+
+}
+
+.arrow_v
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: block;
+	text-align: center;
+}

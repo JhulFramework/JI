@@ -1,0 +1,2 @@
+find( byKey ) should be used as trait,
+because some records depends on combination of two or more key not just single key

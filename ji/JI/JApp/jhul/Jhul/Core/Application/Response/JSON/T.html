@@ -1,0 +1,301 @@
+
+
+	<div uk-toggle="target: .nav_bar; mode: media; media: @m"></div>
+<div class="nav_bar">
+
+<nav class="uk-navbar-container uk-navbar" id="nav_bar" uk-navbar="">
+
+	<div class="nav-bar-right"><a class="uk-navbar-item uk-logo logo" href="http://www.syahi.me.beta/syahi/public_html">SYAHI</a></div>
+
+</nav>
+</div>
+<div class="nav_bar" hidden="">
+<nav class="uk-navbar uk-navbar-container" id="nav_bar">
+
+<div class="nav-bar-right"><a class="uk-navbar-item uk-logo logo" href="http://www.syahi.me.beta/syahi/public_html">SYAHI</a></div>
+
+	<div class="uk-navbar-right">
+		<a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-slide" style="color:#dfd; font-size:18px;">
+			<i class="icon-menu"></i> <span class="uk-margin-small-left"></span>
+		</a>
+	</div>
+</nav>
+
+<div id="offcanvas-slide" uk-offcanvas="flip: true ; " class="uk-offcanvas">
+    <div class="uk-offcanvas-bar background_primary">
+	    <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
+
+	    <div class="uk-width-1-1">
+
+	    </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+
+
+<style>
+.uk-card-secondary
+{
+	background: #30363b;
+}
+
+.uk-card-secondary
+{
+	border-color: #111;
+}
+
+#post_form textarea
+{
+	background: #30363b;
+}
+
+.uk-button
+{
+	padding-left: 8px;
+	padding-right: 8px;
+
+}
+
+.vote
+{
+	background: #30363b;
+	font-size: 16px;
+}
+
+.plus_active
+{
+	color: #2e6;
+	font-weight: bold;
+}
+
+.minus_active
+{
+	color: #e62;
+	font-weight: bold;
+}
+
+button.value
+{
+	color: #888;
+	background: transparent;
+	border: none;
+	padding: 9px;
+
+	font-size: 15px;
+	border: 1px solid transparent;
+
+}
+
+button.value:hover
+{
+	color: #eee;
+	background: #20262b;
+	cursor: pointer;
+}
+
+
+
+
+</style>
+
+
+<div class="uk-padding-small">
+<div class="uk-card uk-card-small uk-card-secondary">
+
+	<div class="uk-card-header">
+		<div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+			<div class="uk-width-auto uk-first-column">
+				<img class="uk-border-circle" src="http://www.syahi.me.beta/syahi/public_html/resources/avatar/2017/06/HOYgLVSRoiUy.png" width="40" height="40">
+			</div>
+			<div class="uk-width-expand">
+				<button class="uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #post_form"> <i class="icon-plus"></i> POST </button>
+			</div>
+		</div>
+	</div>
+
+	<div id="post_form" hidden="">
+
+	<form action="" method="post">
+
+			<div class="uk-card-footer">
+			<fieldset class="uk-fieldset">
+				<legend class="uk-legend">Say Something</legend>
+				<textarea class="uk-textarea" rows="5" name="share[content]" placeholder="Write Something . . ."></textarea>
+				<input name="" value="" type="hidden">
+				<div class="uk-margin">
+				</div>
+			</fieldset>
+
+
+			<button class="uk-button uk-button-secondary uk-align-right" type="submit">SEND</button>
+		</div>
+	</form>
+
+	</div>
+
+</div>
+</div>
+
+
+<div class="uk-section">
+<div class="uk-padding-small" style="font-size:14px;">
+
+
+
+<div class="uk-card uk-card-small uk-card-secondary uk-margin">
+	<div class="uk-card-header">
+		<div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+			<div class="uk-width-auto uk-first-column">
+				<img class="uk-border-circle" src="http://www.syahi.me.beta/syahi/public_html/resources/icons/avatar.png" width="40" height="40">
+			</div>
+			<div class="uk-width-expand">
+				Manish			</div>
+		</div>
+		<div style="padding-top:12px;">
+					</div>
+	</div>
+
+	<div class="uk-card-footer" style="font-size:16px;">
+
+		<button id="plus_6" class="value" name="add_plus" value="6"><span class="content plus_active"><span class="icon"><i class="icon-plus"></i></span><span class="count">1</span></span></button>		<button id="minus_6" class="value" name="add_minus" value="6"><span class="content "><span class="icon"><i class="icon-minus"></i></span><span class="count">0</span></span></button>
+
+	</div>
+</div>
+
+
+
+<div class="uk-card uk-card-small uk-card-secondary uk-margin">
+	<div class="uk-card-header">
+		<div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+			<div class="uk-width-auto uk-first-column">
+				<img class="uk-border-circle" src="http://www.syahi.me.beta/syahi/public_html/resources/avatar/2017/06/HOYgLVSRoiUy.png" width="40" height="40">
+			</div>
+			<div class="uk-width-expand">
+				SUper Prime2			</div>
+		</div>
+		<div style="padding-top:12px;">
+					</div>
+	</div>
+
+	<div class="uk-card-footer" style="font-size:16px;">
+
+		<button id="plus_5" class="value" name="remove_plus" value="5"><span class="content "><span class="icon"><i class="icon-plus"></i></span><span class="count">0</span></span></button>		<button id="minus_5" class="value" name="add_minus" value="5"><span class="content minus_active"><span class="icon"><i class="icon-minus"></i></span><span class="count">1</span></span></button>
+
+	</div>
+</div>
+
+
+
+<div class="uk-card uk-card-small uk-card-secondary uk-margin">
+	<div class="uk-card-header">
+		<div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+			<div class="uk-width-auto uk-first-column">
+				<img class="uk-border-circle" src="http://www.syahi.me.beta/syahi/public_html/resources/avatar/2017/06/HOYgLVSRoiUy.png" width="40" height="40">
+			</div>
+			<div class="uk-width-expand">
+				SUper Prime2			</div>
+		</div>
+		<div style="padding-top:12px;">
+					</div>
+	</div>
+
+	<div class="uk-card-footer" style="font-size:16px;">
+
+		<button id="plus_4" class="value" name="remove_plus" value="4"><span class="content "><span class="icon"><i class="icon-plus"></i></span><span class="count">0</span></span></button>		<button id="minus_4" class="value" name="add_minus" value="4"><span class="content minus_active"><span class="icon"><i class="icon-minus"></i></span><span class="count">1</span></span></button>
+
+	</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<style>
+	.uk-button
+	{
+		border: none;
+		font-weight: bold;
+		color:#aaa;
+	}
+
+	.uk-button:hover
+	{
+		background: #fff;
+		color:#20262f;
+	}
+</style>
+<div class="uk-card-small">
+    <div class="uk-card-footer"><a class="uk-button uk-button-default uk-button-small uk-align-right" href="http://www.syahi.me.beta/syahi/public_html/logout">Logout</a></div>
+</div>
+
+<div class="uk-text-center uk-grid-collapse footer uk-grid uk-grid-stack" uk-grid="">
+	<div class="uk-width-1-1 uk-width-1-2@s uk-first-column">SYAHI © 2017</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/js/uikit.min.js"></script>
+
+	<script src="http://www.syahi.me.beta/syahi/public_html/resources/cache/701442/js/script_main.js"></script><script>
+
+
+function add( action, button )
+{
+
+	var id = '#'+button.id;
+
+	var old_button_content = $(id).html();
+
+	$(id).html('<i class="icon-spin4 animate-spin"></i>');
+
+	var data =
+	{
+		'interaction' : { 'action' : action , 'item_key' : button.value  }
+	};
+
+	//console.log( JSON.stringify(data));
+
+
+	$.ajax
+	(
+		{
+			type: 'POST',
+			url: 'http://www.syahi.me.beta/syahi/public_html/share?mode=json',
+			cache:false,
+			data: data,
+			success: function(response)
+			{
+
+				if( response.plus_id )
+				{
+					$('#'+response.plus_id).html(response.plus_content);
+					$('#'+response.minus_id).html(response.minus_content);
+				}
+				else
+				{
+					$(id).html(old_button_content);
+				}
+
+			}
+		}
+	);
+}
+
+$('button').click
+(
+	function(e)
+	{
+		if( 'add_plus' == e.target.name || 'remove_plus' == e.target.name || 'add_minus' == e.target.name || 'remove_minus' == e.target.name )
+		{
+			//console.log(e.target.id);
+			//console.log( e.target.value + e.target.name );
+			add( e.target.name , e.target );
+		}
+	}
+);
+</script>
+
+ 

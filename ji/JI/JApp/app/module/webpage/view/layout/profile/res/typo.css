@@ -1,0 +1,33 @@
+.name
+{
+	font-size: 30px;
+}
+
+
+
+.quote
+{
+	display: inline-block;
+	margin: 24px 0;
+	font-family: Handlee;
+	font-size: 18px;
+}
+
+.quote .left
+{
+	text-align: left;
+	color: #FF0A2D;
+}
+
+.quote .right
+{
+
+	text-align: right;
+	color: #FF0A2D;
+
+}
+
+.quote .content
+{
+	padding: 0 20px;
+}

@@ -1,0 +1,25 @@
+
+._body
+{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+._header
+{
+	display: flex;
+}
+
+._content
+{
+	display: flex;
+	flex-grow: 1;
+}
+
+._footer
+{
+	display: flex;;
+	
+}
