@@ -62,7 +62,7 @@ class JI
 		return TRUE == $this->_autoInstall ;
 	}
 
-	
+
 	public function formMap()
 	{
 		return $this->_formMap ;

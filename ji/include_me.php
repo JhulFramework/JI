@@ -11,9 +11,10 @@ class Jhul_JI_Loader
 {
 	public static function autoload( $className )
 	{
+
 		if( strpos( $className, 'JI' ) === 0 )
 		{
-			$file = __DIR__.'/'.str_replace( '\\', '/', $className ).'.php';
+			$file = __DIR__.'/'.str_replace(  '\\' , '/' , $className ).'.php';
 
 			if( file_exists( $file ))
 			{
@@ -23,4 +24,4 @@ class Jhul_JI_Loader
 	}
 }
 
-spl_autoload_register(  [ 'Jhul_JI_Loader', 'autoload'] , true);
+spl_autoload_register(  [ 'Jhul_JI_Loader', 'autoload'] , TRUE);
